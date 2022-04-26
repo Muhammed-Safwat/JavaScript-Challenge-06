@@ -1,7 +1,7 @@
-let imagesList = [ "1.webp", "2.webp",
-    "3.webp", "4.webp",
-    "5.webp", "6.webp",
-    "7.webp", "8.webp","9.webp" ,"10.webp","11.webp"];
+let imagesList = [ "1.png", "2.png",
+    "3.png", "4.png",
+    "5.png", "6.png",
+    "7.png", "8.png","9.png" ,"10.png","11.png"];
 let img = document.querySelector( ".img" );
 let left = document.querySelector( ".left" );
 let right = document.querySelector( ".right" );
@@ -23,6 +23,6 @@ left.onclick =  function (){
         x = imagesList.length-1;
     }
     x--; 
-    
+
     img.style.backgroundImage = `url("../images/${imagesList[x]}")` ;
 };
