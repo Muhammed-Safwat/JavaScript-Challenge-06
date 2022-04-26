@@ -22,7 +22,7 @@ left.onclick =  function (){
     {
         x = imagesList.length-1;
     }
-    x--;
-    console.log(imagesList[x]);
+    x--; 
+    
     img.style.backgroundImage = `url("../images/${imagesList[x]}")` ;
 };
