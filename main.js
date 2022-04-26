@@ -1,7 +1,7 @@
-let imagesList = [ "1.png", "2.png",
-    "3.png", "4.png",
-    "5.png", "6.png",
-    "7.png", "8.png","9.png" ,"10.png","11.png"];
+let imagesList = [ "1", "2",
+    "3", "4",
+    "5", "6",
+    "7", "8","9" ,"10","11"];
 let img = document.querySelector( ".img" );
 let left = document.querySelector( ".left" );
 let right = document.querySelector( ".right" );
@@ -14,7 +14,8 @@ right.onclick =  function (){
         x = 0;
     }
     x++;
-    img.style.backgroundImage = `url("../images/${imagesList[x]}")` ;
+
+    img.style.backgroundImage =`url('./images/${imagesList[x]}.png')`
 };
 left.onclick =  function (){
     
@@ -24,5 +25,6 @@ left.onclick =  function (){
     }
     x--; 
 
-    img.style.backgroundImage = `url("../images/${imagesList[x]}")` ;
+
+    img.style.backgroundImage =`url('./images/${imagesList[x]}.png')`
 };
