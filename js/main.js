@@ -15,7 +15,7 @@ right.onclick =  function (){
     }
     x++;
 
-    img.style.backgroundImage =`url('./images/${imagesList[x]}.png')`
+    img.style.backgroundImage =`url('../images/${imagesList[x]}.png')`
 };
 left.onclick =  function (){
     
@@ -26,5 +26,5 @@ left.onclick =  function (){
     x--; 
 
 
-    img.style.backgroundImage =`url('./images/${imagesList[x]}.png')`
+    img.style.backgroundImage =`url('../images/${imagesList[x]}.png')`
 };
